@@ -1,0 +1,162 @@
+
+.off-canvas-content .position-right.is-open ~ .off-canvas-content 
+{
+    transform: none;
+}
+
+
+.off-canvas.position-right 
+{
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: 9999;
+}
+
+.off-canvas.position-right.is-open 
+{
+    transform: translate(0, 0) !important;
+}
+
+.off-canvas.position-right.is-open ~ .off-canvas-content {
+    transform: translateX(0);
+}
+
+.off-canvas .close-menu
+{
+	position: fixed;
+	top:1rem;
+	right:1rem;
+}
+
+#off-canvas #menu-main-menu li a 
+{
+    color: #000;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#off-canvas #menu-main-menu
+{
+	min-height:100%;
+	-ms-flex-line-pack: center;
+align-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+
+#off-canvas #menu-main-menu li 
+{
+	width:100%;
+}
+
+#off-canvas.off-canvas
+{
+	background:rgba(255,255,255,1);
+}
+
+#off-canvas #kdrb6p-acc-menu li {
+    font-size: 1.5rem;
+}
+
+
+/*
+
+Animation for each nav li as nav opens
+
+
+1. run animation when "open" class is added to nav
+2. set animation delay on each item in menu
+
+*/
+
+#off-canvas #menu-main-menu li
+{
+	opacity: 0;
+	transform: translate(1rem, 1rem);
+	transition:all 3s ease-in-out;
+}
+
+#off-canvas.is-open #menu-main-menu li
+{
+	opacity: 1;
+	transform: translate(0, 0);
+	animation-name: AniMenu;
+	-webkit-animation-duration: .5s;
+	  animation-duration: .5s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+}
+
+
+
+@keyframes AniMenu
+{
+
+	from {
+		opacity: 0;
+		transform: translate(1rem, 1rem);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@-webkit-keyframes AniMenu
+{
+
+	from {
+		opacity: 0;
+		transform: translate(1rem, 1rem);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+#off-canvas.is-open #menu-main-menu li:nth-child(1)
+{
+	-webkit-animation-delay:.2s;
+	animation-delay:.2s;
+}
+#off-canvas.is-open #menu-main-menu li:nth-child(2)
+{
+	-webkit-animation-delay:.4s;
+	animation-delay:.4s;
+}
+#off-canvas.is-open #menu-main-menu li:nth-child(3)
+{
+	-webkit-animation-delay:.6s;
+	animation-delay:.6s;
+}
+#off-canvas.is-open #menu-main-menu li:nth-child(4)
+{
+	-webkit-animation-delay:.8s;
+	animation-delay:.8s;
+}
+#off-canvas.is-open #menu-main-menu li:nth-child(5)
+{
+	-webkit-animation-delay:1s;
+	animation-delay:1s;
+}
+#off-canvas.is-open #menu-main-menu li:nth-child(6)
+{
+	-webkit-animation-delay:1.2s;
+	animation-delay:1.2s;
+}
+#off-canvas.is-open #menu-main-menu li:nth-child(7)
+{
+	-webkit-animation-delay:1.4s;
+	animation-delay:1.4s;
+}

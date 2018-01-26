@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HeeboExtraBold';
+    src: url('fonts/HeeboExtraBold.eot');
+    src: url('fonts/HeeboExtraBold.eot') format('embedded-opentype'),
+         url('fonts/HeeboExtraBold.woff2') format('woff2'),
+         url('fonts/HeeboExtraBold.woff') format('woff'),
+         url('fonts/HeeboExtraBold.ttf') format('truetype'),
+         url('fonts/HeeboExtraBold.svg#HeeboExtraBold') format('svg');
+}

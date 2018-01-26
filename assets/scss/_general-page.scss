@@ -1,0 +1,155 @@
+
+body.page-template-default .menu > li > a,
+/*body.page-template-template-portfolio .menu > li > a,*/
+body.page-template-template-case-studies .menu > li > a,
+body.page-template-template-general .menu > li > a,
+body.page-template-template-case-studies .menu > li > a,
+body.blog .menu > li > a {
+	color:#000;
+}
+
+body.page-template-template-vertical-split .menu > li > a,
+body.page-template-template-vertical-split .header-cta,
+body.page-template-template-general .menu > li > a,
+body.page-template-template-general .header-cta,
+body.page-template-template-portfolio .header-cta,
+body.page-template-template-portfolio .menu > li > a,
+body.page-template-template-case-studies .header-cta,
+body.page-template-template-case-studies .menu > li > a
+{
+    color:#fff;
+}
+
+
+//body.page-template-template-case-studies #blaze-logo path,
+body.page-template-default #blaze-logo path,
+/*body.page-template-template-portfolio #blaze-logo path,*/
+body.blog #blaze-logo path,
+body.error404 #blaze-logo path,
+body.error404 #blaze-logo path    {
+    fill: #000;
+}
+
+.blog article {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.page-header-wrap {
+	position:relative;
+}
+.page-background-image {
+	/*padding: 14% 0;*/
+    padding: 66% 0 8% 0;
+}
+.general-page-header {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 1;
+}
+
+.page-header-outer
+{
+    overflow: hidden;
+position: relative;
+z-index: 0;
+}
+
+.general-header-bg
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-page-header
+{
+    z-index: 1;
+    position: relative;
+    color:#fff;
+
+}
+
+
+.page-template-template-general .portfolio-page-header
+{
+    color:#fff;
+}
+
+.single-case_sudy .portfolio-page-header h1.entry-title,
+.entry-title.single-title {
+    color:#000;
+}
+
+.white-opacity-bg {
+	background: rgba(255,255,255,.7);
+}
+
+.blaze-orange-panel
+{
+    background:#fbaf1e;
+    color:#fff;
+}
+
+.article-type-label {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background: #99cc00;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.article-type-label p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: .9rem;
+}
+
+.b-lazy {
+        -webkit-transition: opacity 500ms ease-in-out;
+           -moz-transition: opacity 500ms ease-in-out;
+             -o-transition: opacity 500ms ease-in-out;
+                transition: opacity 500ms ease-in-out;
+                 max-width: 100%;
+                   opacity: 0;
+    }
+.b-lazy.b-loaded {
+               opacity: 1;
+}
+
+.error404 h1
+{
+    font-size: 2.8rem;
+}
+
+
+@media only screen and (min-width:1024px) {
+    .border-right
+    {
+        border-right: 1px solid #ccc;
+        padding-right: 3rem;
+    }
+    .page-background-image {
+        padding: 5% 0 8% 0;
+    }
+    .error404 h1
+    {
+        font-size: 7rem;
+        margin-top: 2rem;
+    }
+    .top-bar
+    {
+        padding:1rem;
+    }
+
+}

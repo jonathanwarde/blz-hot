@@ -1,0 +1,107 @@
+
+.blaze-featured-one.bf-orange {
+	display:block;
+	background: url(../images/featured/utb-stand.jpg);
+	background-position: center right;
+	background-repeat:no-repeat;
+	transition: all .6s ease;
+}
+
+
+
+.blaze-featured-one .row {
+	position:relative;
+}
+.blaze-featured-one.bf-orange .bf-panel {
+	display:inline-block;
+	padding:2rem;
+	min-height:28rem;
+	vertical-align:top;
+}
+.bf-panel h3 {
+	color:#fff;
+	font-weight: 600;
+}
+.blaze-featured-one.bf-orange .bf-panel-first {
+	position: absolute;
+	left: -20%;
+	width: 20%;
+	background: #ff9800 url(../svg/case-study.svg);
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.blaze-featured-one.bf-orange  .bf-panel-second {
+	width:28%;
+	background: #ffa726 url(../images/featured/utb-owl.jpg) bottom right no-repeat;
+    background-size: auto auto;
+	background-size: 70%;
+	position:relative;
+}
+
+/*.blaze-featured-one.bf-orange:hover .bf-panel-second {
+    background: #FF9800 url(../images/featured/utb-owl.jpg) bottom right no-repeat;
+}*/
+
+.bf-panel-second::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%);
+    border: 0 20px 20px 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 35px;
+    border-top-width: 35px;
+    border-left: 20px solid #FFA827;
+ }
+.blaze-featured-one.bf-orange  .bf-panel-third {
+	width:72%;
+	/*background:#ffcc80;
+	background: url(../images/featured/utb-stand.jpg);
+	background-size: cover;*/
+	color: #fff;
+}
+
+.bf-panel h2 {
+	transform: rotate(-90deg);
+	font-size: 7rem;
+	line-height: 30px;
+	transform-origin: 83% 131%;
+	display: inline-block;
+	color: rgba(255,255,255,.4);
+	text-transform: uppercase;
+}
+
+.bf-panel h2 span {
+	font-size:2rem;
+}
+
+.circle-button {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #FFA726;
+    color: #000;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+
+
+.featured-list li {
+	font-weight: 300;
+	font-size: 1.3rem;
+}
+
+@media only screen and (min-width:768px){
+
+}

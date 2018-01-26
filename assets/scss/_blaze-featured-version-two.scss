@@ -1,0 +1,93 @@
+.featuerd-panel p
+{
+    min-height:6rem
+}
+
+.blaze-featured-version-two {
+    display: block;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20rem;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    z-index: 1;
+}
+
+.blaze-featured-version-two img
+{
+    position: absolute;
+    bottom: 0;
+    right: 13%;
+    width: 30%;
+    max-width: 35rem;
+    min-width: 10rem;
+}
+
+
+.blaze-featured-version-two .row
+{
+	position:relative;
+	z-index:1;
+}
+
+.white-content
+{
+	color:#fff;
+}
+
+.gradient-left:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+    z-index: 0;
+}
+
+
+.bfs.gradient-left:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+    z-index: 0;
+    background:#7e9e33;
+    opacity: .87;
+}
+
+
+.white-content .arrow-link
+{
+	color:#fff;
+}
+
+.blaze-featured-version-two .arrow-link
+{
+	display: block;
+    border-top: 3px solid #fff;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media only screen and (min-width:1224px){
+    .featured-panel p
+    {
+        min-height: 12rem;
+    }
+
+
+}

@@ -1,0 +1,120 @@
+.service-box {
+	border-right:1px solid #ccc;
+	padding-top:3rem;
+	position:relative;
+}
+
+.service-box:nth-child(4) {
+    border-right: none;
+}
+
+.service-box h2 {
+	font-size:20px;
+	z-index:3;
+	position:relative;
+	transition: opacity .3s ease-in-out;
+}
+
+
+.service-box a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+
+.service-box svg {
+	position:relative;
+	z-index:3;
+	transition: all .3s ease-in-out
+}
+
+.service-box a:after
+{
+	transition: opacity .3s ease-in-out,visibility .3s ease-in-out;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*background: #000;
+	background: rgba(0,0,0,.3);*/
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+
+.service-box:hover a:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*.service-box:hover svg path {
+    fill: #fff;
+}*/
+
+.service-box:hover h2 {
+	color:#fff;
+}
+
+.service-box p,
+.service-box img {
+	padding-top:2rem;
+	opacity:1;
+	min-height: 100px;
+	transition:all .4s ease-in-out;
+}
+
+
+
+
+/*.service-box img {
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 40%;
+}*/
+
+svg.plus-icon {
+    float: right;
+    margin: .5rem .5rem 0 0;
+    width: 1.4rem;
+	height: 1.4rem;
+}
+
+/*.service-box:hover a,
+.service-box:hover p{
+	color:#fff;
+}*/
+
+
+@media only screen and (min-width:768px){
+	.service-box {
+		height:23rem;
+	}
+	.service-box p,
+	.service-box img {
+		opacity:0;
+		min-height: 200px;
+	}
+	.service-box:hover p,
+	.service-box:hover img {
+		opacity:1;
+	}
+	.transform-on-hover {
+		transition: all .4s ease-in-out;
+		transform:translatey(40%);
+	}
+
+	.page-template-template-case-studies .transform-on-hover {
+		transition: all .4s ease-in-out;
+		transform:translatey(19%);
+	}
+
+	.service-box:hover .transform-on-hover {
+	   transform:translatey(0);
+	}
+
+}

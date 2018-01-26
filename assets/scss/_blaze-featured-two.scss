@@ -1,0 +1,77 @@
+
+.blaze-featured-two {
+	display:block;
+	background: url(../images/featured/wacomms-people.jpg);
+	background-position: center right;
+	background-repeat:no-repeat;
+}
+.blaze-featured-two .row {
+	position:relative;
+}
+.blaze-featured-two .bf-panel {
+	display:inline-block;
+	padding:2rem;
+	min-height:28rem;
+	vertical-align:top;
+}
+/*.bf-panel-first.bf-green {
+	width:15%;
+	background:#7CB342;
+}*/
+.blaze-featured-two .bf-panel-first {
+	position: absolute;
+	left: -20%;
+	width: 20%;
+	/*background:#7cb342;*/
+	background: #7cb342 url(../svg/case-study.svg);
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bf-panel-second.bf-green {
+	width:28%;
+	background: #8BC34A url(../images/featured/wacomms-logo.png) 90% 90% no-repeat;
+    background-size: auto auto;
+	background-size: 200px;
+	position:relative;
+}
+
+.bf-panel-second.bf-green:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%);
+    border: 0 20px 20px 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 35px;
+    border-top-width: 35px;
+    border-left: 20px solid #8BC34A;
+ }
+
+
+.bf-panel-third.bf-green{
+	width:65%;
+	background:#ffcc80;
+	background: url(../images/featured/wacomms-people.jpg);
+	background-size: cover;
+	color: #fff;
+}
+
+.bf-panel h2 {
+	transform: rotate(-90deg);
+	font-size: 7rem;
+line-height: 30px;
+transform-origin: 83% 131%;
+display: inline-block;
+color: rgba(255,255,255,.4);
+text-transform: uppercase;
+}
+
+.bf-panel h2 span {
+	font-size:2rem;
+}

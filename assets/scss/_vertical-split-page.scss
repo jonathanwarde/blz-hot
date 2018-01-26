@@ -1,0 +1,109 @@
+.page-template-template-vertical-split,
+.section.split-main
+{
+    background: #FD8C38;
+}
+
+.page-id-1726,
+.page-id-1726 section.split-main
+{
+    background: #FD8C38;
+}
+
+.page-id-1731,
+.page-id-1731 section.split-main
+{
+    background: #99cc00;
+}
+
+.page-id-1736,
+.page-id-1736 section.split-main
+{
+    background: #603e90;
+}
+
+.page-id-1739,
+.page-id-1739 section.split-main
+{
+    background: #cc3399;
+}
+
+.split-container
+{
+    
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+
+}
+
+
+section.split-main {
+    color:#fff;
+    display: inline-block;
+    vertical-align: top;
+    padding-top:2rem;
+    padding-bottom:2rem;
+     z-index: 2;
+     position: relative;
+}
+
+aside.split-aside {
+    display: inline-block;
+    width:40%;
+    min-height: 100vh;
+    background: url(http://localhost/blazecommunication/wp-content/uploads/2017/08/community.jpg) bottom right no-repeat;
+    background-size: auto auto;
+    background-size: cover;
+    padding-bottom: 109%;
+    top: 0;
+}
+
+.split-aside.split-mobile
+{
+    padding-bottom: 48vh;
+    background-size: cover;
+    display: block;
+    z-index: -1;
+}
+
+@media only screen and (min-width:601px){
+    aside.split-aside.split-mobile
+    {
+        padding-bottom: 40%;
+    }
+}
+
+@media only screen and (min-width:768px){
+    aside.split-aside.split-mobile{display:none;}
+    .split-aside
+    {
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:-12rem;
+    }
+    section.split-main {
+        padding: 11vh 2rem 6rem 2rem;
+    }
+    .split-scrim.medium-4.large-5.columns {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 16rem;
+        padding:0;
+    }
+    .split-scrim:after
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+       background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    }
+}

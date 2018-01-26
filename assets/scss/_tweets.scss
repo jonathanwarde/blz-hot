@@ -1,0 +1,72 @@
+#tweets {
+    /*border-top: 1px solid #ccc;*/
+    padding-bottom:3rem;
+    
+}
+
+#tweet_list {
+    list-style-type: none;
+    padding: 0 0 2rem 68px;
+    background: url(../svg/twitter.svg);
+    background-position: 0 0;
+    background-size: 50px;
+	background-repeat: no-repeat;
+	margin:1rem;
+	position: relative;
+	/*top: 50%;
+	-ms-transform: translatey(-50%);
+	transform: translatey(-50%);*/
+
+}
+
+ul#tweet_list li {
+    font-size: 1rem !important;
+}
+
+ul#tweet_list li a {
+    color: #fff;
+}
+
+.timePosted {
+    margin-bottom: 0;
+    display: inline-block;
+    padding: 0 1rem 0 0;
+}
+
+.interact {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.interact a {
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin:0 .3rem;
+	background-size:contain;
+}
+
+.twitter_reply_icon {
+    background: url(../svg/reply.svg);
+}
+
+.twitter_retweet_icon {
+    background: url(../svg/retweet.svg);
+}
+
+.twitter_fav_icon {
+    background: url(../svg/star.svg);
+}
+
+@media only screen and (min-width:768px) {
+    #tweet_list {
+        padding: 0 0 2rem 80px;
+        background: url(../svg/twitter.svg);
+        background-size: 60px;
+        margin:0;
+        background-repeat: no-repeat;
+
+    }
+}

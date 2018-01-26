@@ -1,0 +1,32 @@
+.screencast-outer
+{
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.screencast {
+    position: relative;
+    display: none;
+}
+
+.screen-cast-laptop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+.screencast video
+{
+	width: 600px;
+	padding: 23px 73px;
+}
+
+@media only screen and (min-width:1024px){
+    .screencast {
+        display:inline-block;
+    }
+}

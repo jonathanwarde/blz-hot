@@ -1,0 +1,9 @@
+.DS_Store
+assets/scss/.sass-cache/*
+node_modules/
+bower_components/
+npm-debug.log
+vendor/
+assets/images/
+assets/svg/
+assets/translation/
